@@ -59,7 +59,9 @@ Security Group Configuration:
     - Attached to the EC2 instance
 Purpose:
 Separate database storage from the operating system.
+![volume_id](AWS_ec2_ebs_project_images/volume_id.png)
 ![ebs_volume](AWS_ec2_ebs_project_images/ebs_attached_ec2.png)
+
 ---
 
 3. **Configure Linux Disk**
