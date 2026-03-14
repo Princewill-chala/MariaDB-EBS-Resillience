@@ -4,8 +4,6 @@ Production-ready MariaDB database deployed on AWS EC2 with persistent EBS storag
 
 
 
-[![AWS](https://img.shields.io/badge/AWS-EC2%20%7C%20EBS%20%7C%20MariaDB-FF9900?style=for-the-badge&logo=amazonaws)](https://aws.amazon.com)
-[![MariaDB](https://img.shields.io/badge/MariaDB-Database-1F3054?style=for-the-badge&logo=mariadb)](https://mariadb.org)
 
 **Production-Ready MariaDB Server on AWS**  
 Deployed a highly reliable database for OnyxPay Ltd using EC2, EBS volumes, and snapshots — exactly as required in a real startup scenario.
@@ -20,3 +18,14 @@ OnyxPay Ltd needed a database that **never loses data** even if the server crash
 - **EBS Snapshots** (backup & recovery)
 
 ## Architecture
+```
+Application/User
+↓
+EC2 Instance (Amazon Linux)
+↓
+MariaDB Database
+↓
+Mounted EBS Volume (/var/lib/mysql)
+↓
+EBS Snapshot (Backup)
+```
